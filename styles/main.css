@@ -75,7 +75,7 @@ h1 {
     color: #b9c1ce;
     font-size: 14px; }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 999px) {
   .consultation-wrapper {
     grid-template-columns: 1fr; }
   .consultation__text {
@@ -484,7 +484,7 @@ p {
 .testimonials__photo {
   border-radius: 50%; }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 999px) {
   .testimonials-wrapper {
     grid-template-columns: 1fr; }
   .testimonials__card {
