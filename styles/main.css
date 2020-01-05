@@ -10,15 +10,14 @@ h1 {
 
 .button {
   display: block;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 14px;
-  border-radius: 8px;
   padding: 21px 65px;
-  cursor: pointer;
-  outline: none;
-  border: 2px solid #0075ff;
+  font-weight: bold;
   color: #0075ff;
+  line-height: 14px;
+  border: 2px solid #0075ff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
   -webkit-transition: -webkit-transform 200ms ease-in-out;
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
@@ -27,21 +26,21 @@ h1 {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   .button_wide {
+    width: 100%;
+    margin-top: 32px;
     color: #fff;
     background-color: #0075ff;
-    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    -webkit-box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
     -webkit-transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
     transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
     transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
-    width: 100%;
-    margin-top: 32px; }
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out; }
     .button_wide:hover {
       background-color: #0067df;
+      border-color: #0067df;
       -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
-              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
-      border-color: #0067df; }
+              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
 
 .consultation-wrapper {
   display: grid;
@@ -248,7 +247,9 @@ h1 {
     color: #fff;
     position: absolute;
     bottom: 165px;
-    padding-top: 18px; }
+    padding-top: 18px;
+    -webkit-animation: coming 1s linear;
+            animation: coming 1s linear; }
     .header__name::before {
       content: "";
       position: absolute;
@@ -318,6 +319,22 @@ h1 {
   #toggler:checked ~ .nav__list {
     visibility: visible; } }
 
+@-webkit-keyframes coming {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes coming {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,12 +384,13 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
-    -webkit-transition: color 200ms ease-in-out;
-    transition: color 200ms ease-in-out; }
+    -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out; }
     .nav__link_active {
       background: rgba(255, 255, 255, 0.1); }
     .nav__link:hover {
-      color: #9fadc2; }
+      color: #9fadc2;
+      background-color: rgba(255, 255, 255, 0.1); }
 
 @media screen and (max-width: 999px) {
   .nav__list {
@@ -445,31 +463,31 @@ p {
   width: 90%;
   margin: auto; }
 
-.testimonial-wrapper {
+.testimonials-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 240px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.testimonial__post {
+.testimonials__card {
+  text-align: center; }
+
+.testimonials__subheading {
+  margin-bottom: 4px; }
+
+.testimonials__post {
   font-size: 14px;
   color: #9fadc2;
   margin-bottom: 13px; }
 
-.testimonial__card {
-  text-align: center; }
-
-.testimonial__subheading {
-  margin-bottom: 4px; }
-
-.testimonial__photo {
+.testimonials__photo {
   border-radius: 50%; }
 
 @media screen and (max-width: 599px) {
-  .testimonial-wrapper {
+  .testimonials-wrapper {
     grid-template-columns: 1fr; }
-  .testimonial__card {
+  .testimonials__card {
     margin-bottom: 48px; } }
 
 * {
