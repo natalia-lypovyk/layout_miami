@@ -8,46 +8,39 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
-.button {
-  display: block;
-  padding: 21px 65px;
-  font-weight: bold;
-  color: #0075ff;
-  line-height: 14px;
-  border: 2px solid #0075ff;
-  border-radius: 8px;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 200ms ease-in-out;
-  transition: -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out; }
-  .button:active {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98); }
-  .button_wide {
-    width: 100%;
-    margin-top: 32px;
-    color: #fff;
-    background-color: #0075ff;
-    -webkit-box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
-            box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
-    -webkit-transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out; }
-    .button_wide:hover {
-      background-color: #0067df;
-      border-color: #0067df;
-      -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
-              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
-
 .consultation-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 413px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.consultation__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  position: relative;
+  text-align: center;
+  margin-top: 152px;
+  margin-bottom: 93px; }
+  .consultation__heading::before {
+    content: "";
+    background: url(../images/crown.svg) no-repeat center;
+    color: #0075ff;
+    width: 23px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.consultation__subheading {
+  color: #0075ff;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 16px; }
 
 .consultation-form__input {
   background: #f7f8ff;
@@ -75,6 +68,39 @@ h1 {
     color: #b9c1ce;
     font-size: 14px; }
 
+.consultation__button {
+  display: block;
+  padding: 21px 65px;
+  font-weight: bold;
+  color: #0075ff;
+  line-height: 14px;
+  border: 2px solid #0075ff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  width: 100%;
+  margin-top: 32px;
+  color: #fff;
+  background-color: #0075ff;
+  -webkit-box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
+          box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
+  -webkit-transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out; }
+  .consultation__button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  .consultation__button:hover {
+    background-color: #0067df;
+    border-color: #0067df;
+    -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+            box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
+
 @media screen and (max-width: 999px) {
   .consultation-wrapper {
     grid-template-columns: 1fr; }
@@ -87,6 +113,26 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .contact__heading {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    position: relative;
+    text-align: center;
+    margin-top: 152px;
+    margin-bottom: 93px; }
+    .contact__heading::before {
+      content: "";
+      background: url(../images/crown.svg) no-repeat center;
+      color: #0075ff;
+      width: 23px;
+      height: 16px;
+      background-size: cover;
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
   .contact-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,6 +172,38 @@ h1 {
     .contact-form__input::placeholder {
       color: #b9c1ce;
       font-size: 14px; }
+  .contact__button {
+    display: block;
+    padding: 21px 65px;
+    font-weight: bold;
+    color: #0075ff;
+    line-height: 14px;
+    border: 2px solid #0075ff;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    width: 100%;
+    margin-top: 32px;
+    color: #fff;
+    background-color: #0075ff;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 83, 181, 0.46);
+    -webkit-transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out; }
+    .contact__button:active {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98); }
+    .contact__button:hover {
+      background-color: #0067df;
+      border-color: #0067df;
+      -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+              box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
 
 @media screen and (max-width: 999px) {
   .contact {
@@ -153,11 +231,48 @@ h1 {
     -webkit-transform: translateX(-51%);
             transform: translateX(-51%); }
 
-.gallery__button {
-  margin: auto; }
-
 .gallery__caption {
   margin: 24px 0 40px; }
+
+.gallery__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  position: relative;
+  text-align: center;
+  margin-top: 152px;
+  margin-bottom: 93px; }
+  .gallery__heading::before {
+    content: "";
+    background: url(../images/crown.svg) no-repeat center;
+    color: #0075ff;
+    width: 23px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.gallery__button {
+  display: block;
+  padding: 21px 65px;
+  font-weight: bold;
+  color: #0075ff;
+  line-height: 14px;
+  border: 2px solid #0075ff;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  margin: auto; }
+  .gallery__button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
 
 .photos {
   display: -webkit-box;
@@ -425,6 +540,11 @@ h1 {
     .info__heading__link {
       color: #0075ff;
       text-decoration: none; }
+  .info__subheading {
+    color: #0075ff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 16px; }
   .info__text {
     width: 500px; }
 
@@ -453,12 +573,6 @@ p {
   font-size: 16px;
   line-height: 27px; }
 
-.subheading {
-  color: #0075ff;
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 16px; }
-
 .main-wrapper {
   width: 90%;
   margin: auto; }
@@ -473,7 +587,32 @@ p {
 .testimonials__card {
   text-align: center; }
 
+.testimonials__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  position: relative;
+  text-align: center;
+  margin-top: 152px;
+  margin-bottom: 93px; }
+  .testimonials__heading::before {
+    content: "";
+    background: url(../images/crown.svg) no-repeat center;
+    color: #0075ff;
+    width: 23px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
 .testimonials__subheading {
+  color: #0075ff;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 16px;
   margin-bottom: 4px; }
 
 .testimonials__post {
@@ -496,26 +635,5 @@ p {
 
 body {
   background: #eee; }
-
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px;
-  position: relative;
-  text-align: center;
-  margin-top: 152px;
-  margin-bottom: 93px; }
-  .heading::before {
-    content: "";
-    background: url(../images/crown.svg) no-repeat center;
-    color: #0075ff;
-    width: 23px;
-    height: 16px;
-    background-size: cover;
-    position: absolute;
-    bottom: -16px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
 
 /*# sourceMappingURL=main.css.map */
