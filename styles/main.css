@@ -541,7 +541,9 @@ h1 {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto; }
   .info__heading {
     font-size: 48px;
     line-height: 48px;
