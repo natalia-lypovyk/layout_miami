@@ -9,6 +9,8 @@ h1 {
   font-style: normal; }
 
 .consultation-wrapper {
+  max-width: 1050px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 413px);
   -webkit-box-pack: justify;
@@ -111,6 +113,8 @@ h1 {
     margin-bottom: 32px; } }
 
 .contact {
+  max-width: 1050px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 413px);
   -webkit-box-pack: justify;
@@ -224,8 +228,8 @@ h1 {
         margin-bottom: 24px; } }
 
 .footer {
-  background: url(../images/footer-new.png) no-repeat center;
   height: 359px;
+  background: url(../images/footer-new.png) no-repeat center;
   background-size: cover;
   position: relative;
   margin-top: 88px;
@@ -322,6 +326,7 @@ h1 {
   background: url(../images/header-new.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   margin-bottom: 104px;
   padding: 0 10%; }
@@ -389,11 +394,6 @@ h1 {
       left: 0;
       width: 35px;
       border-radius: 2px; }
-  .header__nav {
-    position: absolute;
-    bottom: 48px;
-    left: 0;
-    right: 0; }
 
 #toggler {
   opacity: 0; }
@@ -471,6 +471,10 @@ h1 {
             transform: translateX(0); } }
 
 .nav {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
   color: #fff;
   text-transform: uppercase; }
   .nav__list {
@@ -496,6 +500,7 @@ h1 {
     text-decoration: none;
     font-size: 12px;
     line-height: 16px;
+    font-weight: bold;
     border-radius: 8px;
     -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
     transition: color 200ms ease-in-out, background-color 200ms ease-in-out; }
@@ -537,14 +542,14 @@ h1 {
         background: #0067df; } }
 
 .info {
+  max-width: 1050px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto; }
+          justify-content: space-between; }
   .info__heading {
     font-size: 48px;
     line-height: 48px;
