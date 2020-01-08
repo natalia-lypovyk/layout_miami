@@ -49,9 +49,12 @@ h1 {
   padding: 17px;
   margin-bottom: 16px;
   width: 100%;
-  outline: none; }
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .consultation-form__input:focus {
-    background: #fff; }
+    background: #fff;
+    border-color: #0075ff; }
   .consultation-form__input::-webkit-input-placeholder {
     color: #b9c1ce;
     font-size: 14px; }
@@ -154,9 +157,12 @@ h1 {
     padding: 17px;
     margin-bottom: 16px;
     width: 100%;
-    outline: none; }
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .contact-form__input:focus {
-      background: #fff; }
+      background: #fff;
+      border-color: #0075ff; }
     .contact-form__input::-webkit-input-placeholder {
       color: #b9c1ce;
       font-size: 14px; }
@@ -269,10 +275,15 @@ h1 {
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  margin: auto; }
+  margin: auto;
+  -webkit-transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out; }
   .gallery__button:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
+  .gallery__button:hover {
+    background-color: #0075ff;
+    color: #fff; }
 
 .photos {
   display: -webkit-box;
