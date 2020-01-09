@@ -600,8 +600,8 @@ p {
   line-height: 27px; }
 
 .main__wrapper {
-  width: 90%;
   max-width: 1050px;
+  width: 90%;
   margin: auto; }
 
 .testimonials__wrapper {
