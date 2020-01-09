@@ -9,8 +9,6 @@ h1 {
   font-style: normal; }
 
 .consultation__wrapper {
-  max-width: 1050px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 413px);
   -webkit-box-pack: justify;
@@ -46,8 +44,8 @@ h1 {
 
 .consultation-form__input {
   background: #f7f8ff;
-  border: 2px solid #90c2ff;
   border-radius: 8px;
+  border: 1px solid #f7f8ff;
   padding: 17px;
   margin-bottom: 16px;
   width: 100%;
@@ -113,8 +111,6 @@ h1 {
     margin-bottom: 32px; } }
 
 .contact__wrapper {
-  max-width: 1050px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 413px);
   -webkit-box-pack: justify;
@@ -159,8 +155,8 @@ h1 {
 
 .contact-form__input {
   background: #f7f8ff;
-  border: 2px solid #90c2ff;
   border-radius: 8px;
+  border: 1px solid #f7f8ff;
   padding: 17px;
   margin-bottom: 16px;
   width: 100%;
@@ -343,7 +339,7 @@ h1 {
   margin-bottom: 104px;
   padding: 0 10%; }
   .header__wrapper {
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
     height: 100%;
     position: relative; }
@@ -555,8 +551,6 @@ h1 {
         background: #0067df; } }
 
 .info {
-  max-width: 1050px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,12 +600,10 @@ p {
   line-height: 27px; }
 
 .main__wrapper {
-  width: 90%;
+  max-width: 1050px;
   margin: auto; }
 
 .testimonials__wrapper {
-  max-width: 1050px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 240px);
   -webkit-box-pack: justify;
