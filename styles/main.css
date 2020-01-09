@@ -324,6 +324,14 @@ h1 {
   .photos__wide_right .photos__img {
     width: calc(50% - 10px); } }
 
+@media screen and (max-width: 500px) {
+  .photos {
+    height: 131px; }
+    .photos__img {
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; } }
+
 .header {
   height: 100vh;
   width: auto;
