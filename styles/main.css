@@ -659,6 +659,10 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth; }
+
 body {
   background: #eee; }
 
