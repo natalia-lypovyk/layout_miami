@@ -103,6 +103,9 @@ h1 {
     border-color: #0067df;
     -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
             box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
+  .consultation__button_link {
+    text-decoration: none;
+    color: #fff; }
 
 @media screen and (max-width: 999px) {
   .consultation__wrapper {
@@ -214,6 +217,9 @@ h1 {
     border-color: #0067df;
     -webkit-box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
             box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46); }
+  .contact__button_link {
+    text-decoration: none;
+    color: #fff; }
 
 @media screen and (max-width: 999px) {
   .contact__wrapper {
